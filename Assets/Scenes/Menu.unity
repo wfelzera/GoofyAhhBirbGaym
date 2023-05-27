@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 1431393943}
   - component: {fileID: 1431393944}
   - component: {fileID: 1431393942}
+  - component: {fileID: 1431393945}
   m_Layer: 0
   m_Name: birb
   m_TagString: Untagged
@@ -659,7 +660,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431393938}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01c1533c7fd2d0b4f92322f8fbe2814e, type: 3}
   m_Name: 
@@ -713,6 +714,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1431393945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431393938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85a1c22dddd2034db1036ac0004c6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 4b4a57de377138e4e8369d8145550062, type: 3}
+  sprite2: {fileID: 21300000, guid: 47a1c54c1427e10458e1e21315a00666, type: 3}
+  sprite3: {fileID: 21300000, guid: 477a76ff29832b2499b9244de7070326, type: 3}
+  fps: 10
 --- !u!1 &1760207571
 GameObject:
   m_ObjectHideFlags: 0
