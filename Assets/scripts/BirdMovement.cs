@@ -5,24 +5,24 @@ using UnityEngine;
 
 public class BirdMovement : MonoBehaviour
 {
-    public float jumph;
-    public float jump_cooldown;
-    private float jump_cooldown_timer;
+    public float gravity;
+    public float jumpforce;
+    private float speed = 0;
     void Start()
     {
         Transform transform = GetComponent<Transform>();
     }
     void Update()
     {
-        transform.position += new Vector3(0, -2, 0) * Time.deltaTime;
-        if(Input.GetKeyDown(KeyCode.Space) && jump_cooldown_timer <= 0)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            transform.position += new Vector3(0, jumph, 0);
-            jump_cooldown_timer = jump_cooldown;
+            speed = jumpforce;
         }
-        if(jump_cooldown_timer > 0)
+        else
         {
-            jump_cooldown_timer -= Time.deltaTime;
+            speed -= gravity * Time.deltaTime;
         }
+
+        transform.position += new Vector3(0, speed * Time.deltaTime);
     }
 }

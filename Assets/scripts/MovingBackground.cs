@@ -15,6 +15,6 @@ public class MovingBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spriteRenderer.material.mainTextureOffset += new Vector2(0.25f * Time.deltaTime, 0);
+        spriteRenderer.material.mainTextureOffset += new Vector2(0.15f * difficulty.value * Time.deltaTime, 0);
     }
 }
