@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RSMenu.unity
     guid: 0e844bf331e1e544585501db29aedfcf
+  - enabled: 1
+    path: Assets/Scenes/GameModeSwitcher.unity
+    guid: c672996c4829ff74ca46991a6018307c
+  - enabled: 1
+    path: Assets/Scenes/NightGameModeSwitcher.unity
+    guid: 8490d111864dd5b4d81ddc25716be1cb
   m_configObjects: {}
