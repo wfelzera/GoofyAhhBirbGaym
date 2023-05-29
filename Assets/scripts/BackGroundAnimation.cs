@@ -16,8 +16,6 @@ public class BackGroundAnimation : MonoBehaviour
     {
         if(timer >= 1f / fps)
         {
-            timer = 0;
-            idfk++;
             if(idfk % 4 == 0)
             {
                 GetComponent<SpriteRenderer>().sprite = sprite1;
@@ -34,6 +32,8 @@ public class BackGroundAnimation : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().sprite = sprite4;
             }
+            idfk++;
+            timer = 0;
         }
         timer += Time.deltaTime;
     }

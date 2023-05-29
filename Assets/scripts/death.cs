@@ -11,7 +11,7 @@ public class death : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().color = Color.red;
         difficulty.value = 0;
-        GameObject.Find("DifficultyManager").GetComponent<difficulty>().enabled = false;
+        GameObject.Find("GameManager").GetComponent<difficulty>().enabled = false;
     }
     void Update()
     {
