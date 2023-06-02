@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NightGameModeSwitcher.unity
     guid: 8490d111864dd5b4d81ddc25716be1cb
+  - enabled: 1
+    path: Assets/Scenes/HardGameModeSwitcher.unity
+    guid: f59666201f0d77844bf13ce989b51a88
+  - enabled: 1
+    path: Assets/Scenes/HardGameScene.unity
+    guid: 20ac23d6ff573f34cac4a4c90810e7b4
+  - enabled: 1
+    path: Assets/Scenes/HardMenu.unity
+    guid: 24893aa697c240b459002a5216ad4b39
   m_configObjects: {}
