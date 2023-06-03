@@ -10,15 +10,22 @@ public class Boundry : MonoBehaviour
     {
         if (collision.gameObject.name == "birb")
         {
-            GameObject.Find("GameOverText").GetComponent<SpriteRenderer>().enabled = true;
-            GameObject.Find("PlayButton").GetComponent<SpriteRenderer>().enabled = true;
-            GameObject.Find("PlayButton").GetComponent<BoxCollider2D>().enabled = true;
-            GameObject.Find("MenuText").GetComponent<TMP_Text>().enabled = true;
-            GameObject.Find("MenuButton").GetComponent<SpriteRenderer>().enabled = true;
-            GameObject.Find("MenuButton").GetComponent<BoxCollider2D>().enabled = true;
+            if (Helmet.active == 0) {
+                GameObject.Find("GameOverText").GetComponent<SpriteRenderer>().enabled = true;
+                GameObject.Find("PlayButton").GetComponent<SpriteRenderer>().enabled = true;
+                GameObject.Find("PlayButton").GetComponent<BoxCollider2D>().enabled = true;
+                GameObject.Find("PlayButton").GetComponent<PlayAgainButton>().enabled = true;
+                GameObject.Find("MenuText").GetComponent<TMP_Text>().enabled = true;
+                GameObject.Find("MenuButton").GetComponent<SpriteRenderer>().enabled = true;
+                GameObject.Find("MenuButton").GetComponent<BoxCollider2D>().enabled = true;
 
-            collision.gameObject.GetComponent <death>().enabled = true;
-            collision.gameObject.GetComponent<BirdMovement>().enabled = false;
+                collision.gameObject.GetComponent<death>().enabled = true;
+                collision.gameObject.GetComponent<BirdMovement>().enabled = false;
+            } else
+            {
+                Helmet.active = 0;
+                Destroy(this.gameObject);
+            }
         }
     }
 }
