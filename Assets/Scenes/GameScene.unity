@@ -1181,6 +1181,7 @@ MonoBehaviour:
   sc: {fileID: 369704250014094196, guid: f0a92a82716e4914fa7e4dbf4f2bae1d, type: 3}
   gb: {fileID: 3451522393950347811, guid: ba5c7fa4f8c14af4e993b16973bdc7f2, type: 3}
   buff: {fileID: 3451522393950347811, guid: c51f6f9f8f1926c42b5bae9f18e5bcc5, type: 3}
+  slow: {fileID: 3451522393950347811, guid: 7eeb361ef89f6c046a5f2e091ebe2f0d, type: 3}
   cooldown: 3.2
 --- !u!1 &904508163
 GameObject:
