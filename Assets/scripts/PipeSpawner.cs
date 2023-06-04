@@ -11,6 +11,7 @@ public class PipeSpawner : MonoBehaviour
     public GameObject gb;
     public GameObject buff;
     public GameObject slow;
+    public GameObject ds;
     public float cooldown;
     private float timer;
 
@@ -19,7 +20,7 @@ public class PipeSpawner : MonoBehaviour
         if (timer <= 0)
         {
             transform.position = new Vector3(transform.position.x, Random.Range(-1.5f, 2.3f), 0);
-            int idk = Random.Range(1, 20);
+            int idk = Random.Range(1, 30);
             if (idk == 1)
             {
                 Instantiate(buff, new Vector3(transform.position.x, transform.position.y, -0.1f), Quaternion.identity);
@@ -27,6 +28,10 @@ public class PipeSpawner : MonoBehaviour
             if (idk == 2)
             {
                 Instantiate(slow, new Vector3(transform.position.x, transform.position.y, -0.1f), Quaternion.identity);
+            }
+            if (idk == 3)
+            {
+                Instantiate(ds, new Vector3(transform.position.x, transform.position.y, -0.1f), Quaternion.identity);
             }
             else if (PlayerPrefs.GetInt("gb") == 0)
             {
