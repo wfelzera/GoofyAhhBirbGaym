@@ -20,7 +20,7 @@ public class PipeSpawner : MonoBehaviour
         if (timer <= 0)
         {
             transform.position = new Vector3(transform.position.x, Random.Range(-1.5f, 2.3f), 0);
-            int idk = Random.Range(1, 30);
+            int idk = Random.Range(1, 60);
             if (idk == 1)
             {
                 Instantiate(buff, new Vector3(transform.position.x, transform.position.y, -0.1f), Quaternion.identity);

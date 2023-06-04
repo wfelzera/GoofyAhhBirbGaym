@@ -17,6 +17,7 @@ public class BirdMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             speed = jumpforce;
+            if(PlayerPrefs.GetInt("sfx") == 0) GameObject.Find("jump").GetComponent<AudioSource>().Play();
         }
         else
         {
